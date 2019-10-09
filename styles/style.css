@@ -1,3 +1,107 @@
-h1 {
-    font-size: 200px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.ba-header {
+    min-height: 100vh;
+    background-color: #23232e;
+    color: #fff;
+    position: relative;
+}
+
+.container {
+    max-width: 970px;
+    width: 100%;
+    padding: 80px 15px 50px 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ba-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0;
+}
+
+
+/* .ba-logo img {
+    padding-bottom: 6em;
+} */
+
+.ba-title__black {
+    color: #000;
+}
+
+.ba-header p {
+    font-size: 1.125rem;
+    padding: 0 160px;
+    line-height: 1.8em;
+}
+
+.ba-btn-arrow {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    bottom: 50px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.ba-btn-arrow:before,
+.ba-btn-arrow:after {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 16px;
+    background-color: #fff;
+    transform: rotate(45deg) translate(9px, 5px);
+    transition: 1s;
+}
+
+.ba-btn-arrow:after {
+    transform: rotate(-45deg) translate(-9px, 5px);
+}
+
+.ba-btn-arrow:hover:after {
+    transform: rotate(45deg) translate(2px, 5px);
+}
+
+.ba-btn-arrow:hover:before {
+    transform: rotate(-45deg) translate(-2px, 5px);
+}
+
+.ba-skills {
+    display: flex;
+}
+
+.ba-skill {
+    padding: 0 10px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.container section:first-child p {
+    margin: 0 55px;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+    line-height: 1.8em;
+}
+
+.container section:first-child p:last-child {
+    margin-bottom: 100px;
+}
+
+a:target {
+    transform: 3s;
 }
