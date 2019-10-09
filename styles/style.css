@@ -101,7 +101,3 @@ body {
 .container section:first-child p:last-child {
     margin-bottom: 100px;
 }
-
-a:target {
-    transform: 3s;
-}
